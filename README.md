@@ -43,7 +43,7 @@ Current list of recognized entities includes:
 At one call comments from one file are removed.
 
 Usage:
-	python script_dir/remove_comments.py src_dir src_file output_dir1 output_dir2
+	`python script_dir/remove_comments.py src_dir src_file output_dir1 output_dir2`
 
 ## Modifying ##
  

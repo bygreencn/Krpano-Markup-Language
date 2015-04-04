@@ -1,5 +1,7 @@
 #Krpano Markup Language
 
+![Sample Screenshot](/res/syntaxkrpano.jpg)
+
 Package inclides 
 * Syntax definition of [krpano](http://krpano.com) panoramic viewer settings(KML) made for [SublimeText 3](http://www.sublimetext.com/3);
 * May Thunderstorm color theme for ST optimized to highlight KML code;

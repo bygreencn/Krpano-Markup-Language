@@ -1,0 +1,445 @@
+# [PackageDev] target_format: plist, ext: tmTheme
+name: May Thunderstorm Theme
+settings:
+- settings: {activeGuide: '#1b2735', background: '#151718', bracketContentsOptions: underline,
+    caret: '#ffe792', findHighlight: '#4FA5C7', foreground: '#c0c2c1', guide: '#71787c40',
+    gutter: '#0D1011', gutterForeground: '#c0c2c170', inactiveSelection: '#2F6277',
+    invisibles: '#F3FFB51A', lineHighlight: '#101112', selection: '#4FA5C7', selectionForeground: '#fefefe',
+    stackGuide: '#71787c66', tagsForeground: '#B6DFEB', tagsOptions: underline}
+- name: docstring
+  scope: string.quoted.double.block, string.docstring, string.quoted.single.block
+  settings: {fontStyle: italic, foreground: '#218B97'}
+- scope: comment
+  settings: {foreground: '#475359'}
+- scope: string
+  settings: {foreground: '#74a9e3'}
+- scope: meta.property-value.css string.quoted.double.css
+  settings: {foreground: '#aded3e'}
+- scope: 'meta.property-list.css meta.property-value.css string.quoted.double.css
+    punctuation.definition.string.begin.css , meta.property-list.css meta.property-value.css
+    string.quoted.double.css punctuation.definition.string.end.css '
+  settings: {foreground: '#74a9e3'}
+- name: String Quotes
+  scope: meta.property-value.css string.quoted.double.css punctuation.definition.string.begin,
+    meta.property-value.css string.quoted.double.css punctuation.definition.string.end,
+    punctuation.definition.string
+  settings: {fontWeight: bold, foreground: '#aded3e'}
+- name: String Quotes
+  scope: string.quoted.double.css punctuation.definition.string.begin, string.quoted.double.css
+    punctuation.definition.string.end
+  settings: {foreground: '#74a9e3'}
+- name: String constant
+  scope: string constant
+  settings: {fontStyle: bold, foreground: '#bf3f46'}
+- name: String.regexp
+  scope: string.regexp
+  settings: {foreground: '#FFB454'}
+- name: String variable
+  scope: string variable
+  settings: {foreground: '#aded3e'}
+- scope: constant.numeric
+  settings: {foreground: '#c42577'}
+- scope: meta.use, support.other.namespace
+  settings: {foreground: '#ef6aa7dd'}
+- name: Constant
+  scope: constant
+  settings: {foreground: '#b34837'}
+- scope: storage
+  settings: {foreground: '#ffffff'}
+- name: Storage type
+  scope: storage.type
+  settings: {foreground: '#e6cd69'}
+- name: Storage modifier
+  scope: storage.modifier
+  settings: {foreground: '#276AFF'}
+- scope: entity.name.function
+  settings: {foreground: '#74a9e3'}
+- name: Entity inherited-class
+  scope: entity.other.inherited-class
+  settings: {fontStyle: italic, foreground: '#ffffff'}
+- name: Dict key
+  scope: meta.structure.dictionary meta.structure.dictionary.key, constant.other.object.key
+    string
+  settings: {fontStyle: bold, foreground: '#A9FF98'}
+- name: Dict Value
+  scope: meta.structure.dictionary.value
+  settings: {foreground: '#7DC5F9'}
+- scope: meta.function-call
+  settings: {foreground: '#af6cff'}
+- scope: support.function
+  settings: {foreground: '#9b74c4'}
+- scope: support.class
+  settings: {foreground: '#a074c4'}
+- scope: meta.function.js support.class.js
+  settings: {foreground: '#cc523f'}
+- scope: source.js.embedded.html string.quoted.double.html
+  settings: {foreground: '#e6cd69'}
+- name: Support.constant
+  scope: support.constant
+  settings: {foreground: '#cc523f'}
+- name: Named color
+  scope: support.constant.color
+  settings: {foreground: '#cc523f'}
+- scope: entity.name.function.misc
+  settings: {foreground: '#E3E4A9'}
+- scope: entity.name.function.predicate
+  settings: {foreground: '#A5DF93'}
+- scope: entity.name.function.io
+  settings: {foreground: '#DFB3AC'}
+- scope: variable.other.external-symbol
+  settings: {foreground: '#BBDFDD'}
+- name: Variable
+  scope: variable, punctuation.definition.variable
+  settings: {foreground: '#e6cd69'}
+- name: Language Variable
+  scope: variable.language, variable.parameter.function.language
+  settings: {fontStyle: italic, foreground: '#aded3e'}
+- name: Local name
+  scope: entity.other.attribute-name.localname
+  settings: {foreground: '#10FF07'}
+- scope: 'meta.tag.sgml.doctype.xml variable.documentroot.xml '
+  settings: {foreground: '#74a9e3'}
+- name: Other Variable
+  scope: variable.other
+  settings: {foreground: '#aded3e'}
+- scope: variable.parameter, variable.assignment
+  settings: {fontStyle: italic, foreground: '#e38630'}
+- scope: meta.at-rule.font-face.css meta.property-list.css meta.property-value.css
+    variable.parameter.misc.css
+  settings: {foreground: '#aded3e'}
+- name: Keyword
+  scope: keyword
+  settings: {foreground: '#aded3e'}
+- scope: keyword.control
+  settings: {foreground: '#dea412'}
+- scope: keyword.operator
+  settings: {fontStyle: bold, foreground: '#a69b7c'}
+- name: Keyword other
+  scope: keyword.other
+  settings: {foreground: '#FF026A'}
+- scope: entity.name.structure
+  settings: {foreground: '#22ff99df'}
+- scope: entity.name.type
+  settings: {foreground: '#6bc238'}
+- scope: meta.class, entity.name.class, entity.name.type.class
+  settings: {foreground: '#6bc238'}
+- scope: invalid
+  settings: {foreground: '#F8F8F8'}
+- name: Invalid deprecated
+  scope: invalid.deprecated
+  settings: {background: '#38000B', foreground: '#E6002B'}
+- scope: string source
+  settings: {foreground: '#5eebb8'}
+- scope: meta.tag.inline.any.html entity.name.tag.inline.any.html
+  settings: {foreground: '#74a9e3'}
+- scope: entity.name.tag
+  settings: {foreground: '#74a9e3'}
+- scope: meta.tag.inline.any.html entity.other.attribute-name
+  settings: {foreground: '#9FCA56'}
+- scope: meta.tag.structure.any.html entity.name.tag.structure.any.html
+  settings: {foreground: '#74a9e3'}
+- scope: 'meta.tag.other.html meta.attribute-with-value.id.html string.quoted.double.html
+    meta.toc-list.id.html, meta.tag.block.any.html string.quoted.double.html, meta.tag.inline.any.html
+    string.quoted.double.html, meta.tag.other.html string.quoted.double.html '
+  settings: {foreground: '#74a9e3'}
+- scope: meta.tag.other.html string.quoted.double.html punctuation.definition.string.begin.html,
+    meta.tag.other.html string.quoted.double.html punctuation.definition.string.end.html,
+    meta.tag.block.any.html string.quoted.double.html punctuation.definition.string.begin.html,
+    meta.tag.block.any.html string.quoted.double.html punctuation.definition.string.end.html,
+    meta.tag.inline.any.html string.quoted.double.html punctuation.definition.string.begin.html,
+    meta.tag.inline.any.html string.quoted.double.html punctuation.definition.string.end.html,
+    meta.tag.any.html string.quoted.double.html punctuation.definition.string.begin.html,
+    meta.tag.any.html string.quoted.double.html punctuation.definition.string.end.html
+  settings: {foreground: '#74a9e3'}
+- scope: meta.tag.other.html meta.attribute-with-value.id.html punctuation.separator.key-value.html,
+    meta.tag.block.any.html, meta.tag.inline.any.html, meta.tag.other.html, meta.tag.any.html
+  settings: {foreground: '#a074c4'}
+- scope: 'meta.tag.any.html string.quoted.double.html constant.character.entity.html,
+    meta.tag.any.html string.quoted.double.html constant.character.entity.html punctuation.definition.entity.html '
+  settings: {foreground: '#74a9e3'}
+- name: Attribute name
+  scope: meta.tag.block.any.html entity.other.attribute-name.html, storage.type.attr
+  settings: {foreground: '#9FCA56'}
+- scope: meta.tag.block.any.html entity.name.tag.block.any.html
+  settings: {foreground: '#74a9e3'}
+- scope: meta.tag.any.html entity.name.tag.html
+  settings: {foreground: '#74a9e3'}
+- name: Local name
+  scope: entity.other.attribute-name.localname
+  settings: {foreground: '#c0c2c1'}
+- scope: meta.tag.xml entity.name.tag.localname.xml
+  settings: {foreground: '#6bc238'}
+- name: HTML String
+  scope: string.quoted.double.html, string.quoted.double.html punctuation.definition.string.begin.html,
+    string.quoted.double.html punctuation.definition.string.end.html, string.quoted.single.html
+  settings: {foreground: '#c0c2c1'}
+- name: slim String
+  scope: 'string.quoted.double.html meta.toc-list.id.html '
+  settings: {foreground: '#74a9e3'}
+- name: HTML Style tag
+  scope: text.html entity.name.tag.style, text.html source.css punctuation.definition.tag
+  settings: {foreground: '#A883FF'}
+- name: doctype
+  scope: meta.tag.sgml.doctype, entity.name.tag.doctype
+  settings: {fontStyle: italic, foreground: '#9FCA56'}
+- name: Doctype/XML Processing
+  scope: meta.tag.sgml.doctype.xml, declaration.sgml.html declaration.doctype, declaration.sgml.html
+    declaration.doctype entity, declaration.sgml.html declaration.doctype string,
+    declaration.xml-processing, declaration.xml-processing entity, declaration.xml-processing
+    string, doctype
+  settings: {foreground: '#3c444d'}
+- scope: meta.tag.sgml.doctype.xml keyword.doctype.xml
+  settings: {foreground: '#9FCA56'}
+- scope: declaration.tag, declaration.tag entity
+  settings: {foreground: '#3cadd7'}
+- name: Tag
+  scope: meta.tag.other.html entity.name.tag.other.html
+  settings: {foreground: '#74a9e3'}
+- name: html id
+  scope: entity.other.attribute-name.id.html
+  settings: {foreground: '#cc523f'}
+- name: html class
+  scope: 'meta.tag.other.html entity.other.attribute-name.html , meta.tag.any.html
+    entity.other.attribute-name.html '
+  settings: {foreground: '#9FCA56'}
+- name: Tag Punctuation
+  scope: punctuation.definition.tag
+  settings: {foreground: '#74a9e3'}
+- name: html punctuations tags
+  scope: punctuation.definition.tag.end, punctuation.definition.tag.begin
+  settings: {foreground: '#f2c200'}
+- name: HTML Entities
+  scope: constant.character.entity.html, constant.character.entity.html punctuation
+  settings: {foreground: '#5eebb8'}
+- scope: source.php.embedded.block.html, punctuation.definition.array.begin.php, punctuation.definition.array.end.php,
+    punctuation.definition.parameters.begin.php, punctuation.definition.parameters.end.php
+  settings: {foreground: '#c0c2c1'}
+- name: css.string
+  scope: meta.attribute-selector.css
+  settings: {foreground: '#9FCA56'}
+- name: 'CSS: attribute-match'
+  scope: source.css meta.attribute-selector keyword.operator.comparison
+  settings: {foreground: '#673000'}
+- scope: meta.property-value.css keyword.operator.less
+  settings: {fontStyle: italic, foreground: '#aded3e'}
+- name: 'CSS: prefix'
+  scope: meta.property-list.css meta.property-name.css
+  settings: {fontStyle: italic, foreground: '#a074c4'}
+- name: 'CSS: pseudo-element'
+  scope: entity.other.attribute-name.pseudo-element
+  settings: {foreground: '#74a9e3'}
+- name: 'CSS: pseudo-class'
+  scope: entity.other.attribute-name.pseudo-class, entity.other.attribute-name.tag.pseudo-class
+  settings: {foreground: '#74a9e3'}
+- name: 'CSS: selector'
+  scope: meta.selector.css
+  settings: {foreground: '#c0c2c1'}
+- name: 'CSS: units'
+  scope: keyword.other.unit
+  settings: {foreground: '#c0c2c1'}
+- scope: meta.property-value.css constant.numeric.css keyword.other.unit.css
+  settings: {foreground: '#aded3e'}
+- scope: parameter.less constant.numeric.css keyword.other.unit.css
+  settings: {foreground: '#aded3e'}
+- name: 'CSS: Flag'
+  scope: keyword.other.important.css
+  settings: {fontStyle: italic, foreground: '#aded3e'}
+- name: 'CSS: @import'
+  scope: meta.at-rule.css keyword.control.at-rule.css
+  settings: {foreground: '#aded3e'}
+- name: 'CSS: @at-rule'
+  scope: 'meta.at-rule.css keyword.control.at-rule.css punctuation.definition.keyword.css,
+    meta.at-rule.import.css keyword.control.at-rule.import.css punctuation.definition.keyword.css '
+  settings: {foreground: '#858d8a'}
+- scope: meta.property-value.css parameter.less variable.parameter.misc.css
+  settings: {foreground: '#aded3e'}
+- name: css tag-name
+  scope: meta.selector.css entity.name.tag.css
+  settings: {foreground: '#74a9e3'}
+- name: 'CSS: tag wildcard'
+  scope: entity.name.tag.wildcard, entity.other.attribute-name.universal
+  settings: {fontStyle: bold, foreground: '#FF7900'}
+- name: css#id
+  scope: meta.selector.css entity.other.attribute-name.id, entity.other.attribute-name.id.css
+    punctuation
+  settings: {fontStyle: ' bold', foreground: '#cc523f'}
+- name: css.class
+  scope: entity.other.attribute-name.class.css
+  settings: {foreground: '#74a9e3'}
+- name: 'css property-name:'
+  scope: support.type.property-name.css
+  settings: {foreground: '#a074c4'}
+- name: css property-value;
+  scope: meta.property-group support.constant.property-value.css, meta.property-value
+    support.constant.property-value.css
+  settings: {foreground: '#cc523f'}
+- name: css additional-constants
+  scope: meta.property-value support.constant.named-color.css, meta.property-value
+    constant
+  settings: {foreground: '#cc523f'}
+- name: css constructor.argument
+  scope: meta.constructor.argument.css, meta.constructor.argument
+  settings: {foreground: '#d7503c'}
+- name: 'Css : #Hex'
+  scope: meta.property-list.css meta.property-value.css constant.other.color.rgb-value.css
+    punctuation.definition.constant.css
+  settings: {foreground: '#aded3e'}
+- name: LESS variables
+  scope: variable.other.less, variable.declaration.less
+  settings: {foreground: '#aded3e'}
+- name: LESS mixin
+  scope: entity.other.less.mixin
+  settings: {foreground: '#ffffff'}
+- name: LESS units
+  scope: source.css.less keyword.unit.css
+  settings: {foreground: '#5eebb8'}
+- name: 'SASS: Block comment'
+  scope: comment.block.sass
+  settings: {fontStyle: italic, foreground: '#208C9A'}
+- name: 'SASS: Placeholder Selector'
+  scope: entity.other.attribute-name.placeholder-selector.sass
+  settings: {fontStyle: bold italic, foreground: '#FF5699'}
+- name: 'SASS: Attribute Selector'
+  scope: entity.other.attribute-selector.sass
+  settings: {foreground: '#817DFF'}
+- name: 'SASS: Regex'
+  scope: keyword.other.regex.sass
+  settings: {foreground: '#FFE4A6'}
+- name: 'SASS: Comma'
+  scope: comment.punctuation.comma.sass
+  settings: {foreground: '#FCFDFF'}
+- name: 'SASS: RGB Color'
+  scope: constant.other.color.rgb-value.css, meta.property-value.css constant.other.color.rgb-value.css,
+    constant.other.color.rgb-value.css punctuation.definition.constant.css, meta.property-value.css
+    constant.other.color.rgb-value.css punctuation.definition.constant.css
+  settings: {foreground: '#cc523f'}
+- name: 'Sass: Semicolon'
+  scope: comment.punctuation.semicolon.sass
+  settings: {foreground: '#6969FA'}
+- name: Property - JavaScriptNext
+  scope: variable.other.property
+  settings: {foreground: '#AA00AA'}
+- name: Object - JavaScriptNext
+  scope: variable.other.object
+  settings: {foreground: '#00A452'}
+- name: Constant - JavaScriptNext
+  scope: variable.other.constant
+  settings: {fontStyle: bold, foreground: '#FFA325'}
+- name: Node keyword - JavaScriptNext
+  scope: support.keyword.node
+  settings: {foreground: '#93D6F7'}
+- name: jQuery support class
+  scope: support.class.js.jquery
+  settings: {foreground: '#08D879'}
+- name: JS String
+  scope: string.quoted.double.js, string.quoted.single.js, punctuation.definition.string.begin.js,
+    punctuation.definition.string.end.js
+  settings: {foreground: '#74a9e3'}
+- name: punctuation.terminator.statement.js
+  scope: punctuation.terminator.statement.js
+  settings: {foreground: '#858d8a'}
+- scope: punctuation.definition.parameters, variable.parameter.function.js punctuation.separator.object
+  settings: {foreground: '#74a9e3'}
+- scope: source.js.embedded.html string.quoted.single.js, source.js.embedded.html
+    string.quoted.single.js punctuation.definition.string.begin.js, source.js.embedded.html
+    string.quoted.single.js punctuation.definition.string.end.js
+  settings: {foreground: '#c0c2c1'}
+- scope: source.js.embedded.html keyword.operator.js
+  settings: {foreground: '#cc523f'}
+- scope: source.js.embedded.html meta.brace.round.js
+  settings: {foreground: '#74a9e3'}
+- scope: source.js.embedded.html entity.name.tag.script.html
+  settings: {foreground: '#74a9e3'}
+- scope: source.js.embedded.html entity.other.attribute-name.html
+  settings: {foreground: '#9FCA56'}
+- scope: meta.block-level.markdown markup.heading.markdown punctuation.definition.heading.markdown,
+    meta.block-level.markdown markup.heading.markdown entity.name.section.markdown
+  settings: {foreground: '#A074C4'}
+- scope: 'text.html.markdown markup.list.numbered.markdown meta.paragraph.list.markdown
+    meta.link.inline.markdown markup.underline.link.markdown, text.html.markdown markup.list.unnumbered.markdown
+    meta.paragraph.list.markdown meta.link.inline.markdown markup.underline.link.markdown,
+    text.html.markdown meta.paragraph.markdown meta.link.inline.markdown markup.underline.link.markdown,
+    punctuation.definition.metadata.markdown '
+  settings: {foreground: '#9FCA56'}
+- scope: text.html.markdown meta.paragraph.markdown meta.image.inline.markdown markup.underline.link.image.markdown,
+    meta.paragraph.markdown meta.image.inline.markdown punctuation.definition.metadata.markdown
+  settings: {foreground: '#CD4046'}
+- scope: 'markup.list.unnumbered.markdown punctuation.definition.list_item.markdown,
+    markup.list.numbered.markdown punctuation.definition.list_item.markdown, markup.list.numbered.markdown '
+  settings: {foreground: '#aded3e'}
+- scope: markup.list.numbered.markdown meta.paragraph.list.markdown
+  settings: {foreground: '#c0c2c1'}
+- scope: text.find-in-files
+  settings: {foreground: '#84a4aa'}
+- name: 'Find In Files: filename'
+  scope: entity.name.filename.find-in-files
+  settings: {foreground: '#9FCA56'}
+- name: 'Find In Files: Line Number - Match'
+  scope: constant.numeric.line-number.match.find-in-files
+  settings: {foreground: '#cc523f'}
+- name: main
+  scope: source.diff
+  settings: {foreground: '#c0c2c1'}
+- name: diff.header from
+  scope: meta.diff.header.from-file, meta.diff.header.from-file punctuation.definition.from-file.diff
+  settings: {foreground: '#41535b'}
+- name: diff.header to
+  scope: meta.diff.header.to-file, meta.diff.header.to-file punctuation.definition.to-file.diff
+  settings: {foreground: '#41535b'}
+- name: diff.deleted
+  scope: markup.deleted.diff, markup.deleted.diff punctuation.definition.inserted.diff
+  settings: {foreground: '#cc523f'}
+- name: diff.inserted
+  scope: markup.inserted.diff, punctuation.definition.inserted.diff
+  settings: {foreground: '#9FCA56'}
+- name: range
+  scope: meta.diff.range.unified, meta.diff.range.unified meta.toc-list.line-number.diff,
+    meta.diff.range.unified punctuation.definition.range.diff
+  settings: {fontStyle: italic, foreground: '#A074C4'}
+- name: GitGutter deleted
+  scope: markup.deleted.git_gutter
+  settings: {foreground: '#F92672'}
+- name: GitGutter inserted
+  scope: markup.inserted.git_gutter
+  settings: {foreground: '#A6E22E'}
+- name: GitGutter changed
+  scope: markup.changed.git_gutter
+  settings: {foreground: '#967EFB'}
+- name: GitGutter ignored
+  scope: markup.ignored.git_gutter
+  settings: {foreground: '#565656'}
+- name: GitGutter untracked
+  scope: markup.untracked.git_gutter
+  settings: {foreground: '#565656'}
+- name: 'Punctuation / Delimitation / Separation '
+  scope: meta.brace.curly
+  settings: {foreground: '#858d8a'}
+- name: Round braces
+  scope: meta.brace.round
+  settings: {foreground: '#c0c2c1'}
+- name: Array Punctuation
+  scope: meta.group.braces.square punctuation.section.scope, meta.group.braces.square,
+    meta.brace.square, punctuation.separator.array, punctuation.section.array, punctuation.definition.array,
+    punctuation.definition.constant.range
+  settings: {foreground: '#7F5E40'}
+- name: ~ String Punctuation
+  scope: punctuation.definition.string -meta.tag
+  settings: {foreground: '#4FA5C7'}
+- name: meta.delimiter
+  scope: meta.delimiter
+  settings: {fontStyle: bold, foreground: '#858d8a'}
+- name: punctuation.terminator
+  scope: punctuation.terminator
+  settings: {fontStyle: bold, foreground: '#858d8a'}
+- name: meta.delimiter.method.period
+  scope: meta.delimiter.method.period
+  settings: {fontStyle: bold, foreground: '#ffffff'}
+- name: SublimeLinter Warning
+  scope: sublimelinter.mark.warning
+  settings: {foreground: '#DDB700'}
+- name: SublimeLinter Error
+  scope: sublimelinter.mark.error
+  settings: {foreground: '#D02000'}
+- name: SublimeLinter Gutter Mark
+  scope: sublimelinter.gutter-mark
+  settings: {foreground: '#FFFFFF'}

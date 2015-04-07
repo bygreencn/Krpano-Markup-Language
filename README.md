@@ -1,10 +1,10 @@
-#Krpano Markup Language
+#Krpano Markup Language (KML)
 
 ![Sample Screenshot](/res/syntaxkrpano.png)
 
 Package inclides 
-* Syntax definition of [krpano](http://krpano.com) panoramic viewer settings(KML) made for [SublimeText 3](http://www.sublimetext.com/3);
-* May Thunderstorm color theme for ST optimized to highlight KML code;
+* Syntax definition of [krpano](http://krpano.com) panoramic viewer settings made for [SublimeText 3](http://www.sublimetext.com/3);
+* Color theme "May Thunderstorm" for ST optimized to highlight KML code;
 * Python Script to remove comments from src.
 
 ##Contents
@@ -20,7 +20,7 @@ Package inclides
 
 ## Features ##
 
-**I.**	Syntax definition is based on [official krpano documentation](http://krpano.com/docu/xml/#top), [plugin](http://krpano.com/plugins/) docs and is intended to recognize all structural entities(e.g. elements, properties or keywords) of KML.
+**I.**	Syntax definition is based on [official krpano documentation](http://krpano.com/docu), [plugin](http://krpano.com/plugins/) docs and is intended to recognize all structural entities(e.g. elements, properties or keywords) of KML.
 
 Current list of recognized entities includes:
 * Operators (( ) [ ] . , ; == === != !== < > <= >= ! AND OR LT GT LE GE);
@@ -33,7 +33,7 @@ Current list of recognized entities includes:
 * Action arguments;
 * Hex numbers prefixed by 0x or #;
 * Decimal numbers including % values;
-* Comments following // until the end of the line**(1)**;
+* Single-line comments(following // until the end of the line**(1)**);
 * XML tags.
 
 **1. Since comments are not supported niether in actions nor in event handlers they should be removed from source code before execution.**
@@ -41,6 +41,8 @@ Current list of recognized entities includes:
 **II.**	May Thunderstorm is user-defined color theme for ST3 based on [Seti dark color scheme](https://github.com/jesseweed/seti-ui) so it supports any other language.
 
 **III.**	removeComments.py script removes single-line comments from KML source. This operation is required for correct code exec.
+
+Requires [python environment](https://www.python.org/downloads/windows/)
 
 At one call comments from one file are removed.
 

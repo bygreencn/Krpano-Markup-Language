@@ -33,6 +33,7 @@ Current list of recognized entities includes:
 * Action arguments;
 * Hex numbers prefixed by 0x or #;
 * Decimal numbers including % values;
+* Single-line string constants;
 * Single-line comments(following // until the end of the line**(1)**);
 * XML tags.
 

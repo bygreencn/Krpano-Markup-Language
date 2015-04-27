@@ -39,7 +39,7 @@ Current list of recognized entities includes:
 
 **1. Since comments are not supported niether in actions nor in event handlers they should be removed from source code before execution.**
 
-**II.**	May Thunderstorm is user-defined color theme for ST3 based on [Seti dark color scheme](https://github.com/jesseweed/seti-ui) so it supports any other language.
+**II.**	May Thunderstorm is user-defined color theme for ST3 based on [Seti Monokai dark color scheme](https://github.com/jesseweed/seti-ui) so it supports any other language.
 
 **III.**	removeComments.py script removes single-line comments from KML source. This operation is required for correct code exec.
 
